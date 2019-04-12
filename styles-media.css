@@ -1,0 +1,370 @@
+@media (max-width: 1200px) {
+	.box-name__headline {
+		font-size: 54px;
+	}
+	.page-img_bg {
+		left: 422px;
+	}
+	
+	svg {
+		left: 144px;
+	}
+
+	.page-adaptive__flying_item_rotate_5 {
+		right: -470px;
+		top: 241px;
+		font-size: 25px;
+	}
+}
+
+                                        /*планшетное разрешение */
+                                        /*верхняя часть сайта*/
+@media (max-width: 1024px) {
+	.header-menu-items {
+		display: none;
+	}
+
+	.header__menu-icon {
+		display: block;
+	}
+
+			.box-name__button {
+				width: 320px;
+				height: 68px;
+			}
+	
+																				
+	
+
+																			/*что я могу*/
+
+	.box-skills {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		max-width: 700px;
+	}
+
+			.box-skills__text {
+				margin-bottom: 78px;
+			}
+
+			.form-cost-service {
+				margin-top: 17px;
+				width: 320px;
+				height: 68px;
+			}
+														/*примеры моих работ*/
+
+	.box-projects__fish {
+		display: none;
+	}		
+
+	.box-projects {
+		width: 100%;
+	}
+
+	.box-projects__img {
+		width: 100%;
+	}
+
+	.box-projects__text {
+		font-size: 25px;
+	}
+
+	.global-wrap-works__arrow_shadow {
+		display: none;
+	}
+
+	.box-projects {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.block-checked-elements {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.block-order__button {
+		width: 320px;
+		height: 68px;
+	}
+
+																			/*Адаптивная вёрстка под все устройства*/
+	.block-page-adaptive {
+		padding: 0 20px;
+	}
+}	
+
+
+@media (max-width: 800px) {
+
+																					/*footer*/
+	.footer {
+		padding-top: 40px;
+	}
+
+	.block_down-foot {
+		margin-top: 50px;
+	}
+
+	.block-connection {
+		padding: 0;
+	}
+
+	.footer-menu__pay {
+		margin-bottom: 40px;
+	}
+
+	.footer-menu__link {
+		font-size: 15px;
+	}
+
+	.block-connection {
+		color: #8993ad;
+	}
+
+	.block-number__number {
+		font-size: 20px;
+		padding-top: 4px;
+	}
+
+	.block-mail__mail {
+		font-size: 20px;
+		padding-bottom: 20px;
+		padding-top: 4px;
+	}
+
+	.block-social-icons-connection__request-a-call {
+		display: none;
+	}
+
+	.block-new-form {
+		display: block;
+	} 
+
+				.page-flying-item {
+					font-size: 40px;
+				}
+
+
+
+																							/*Адаптивная вёрстка под все устройства*/
+
+	.page-proof-text-container__headline {
+		font-size: 28px;
+		margin-top: 50px;
+	}
+
+	.page-proof-text-container__text {
+		font-size: 15px;
+		margin-bottom: 50px;
+	}
+
+	.block-page-adaptive {
+		padding: 0;
+	}
+
+																				/*примеры моих работ*/
+
+	.block-order__button {
+		width: 280px;
+		height: 55px;
+	}
+
+	.block-checked-elements__circles {
+		width: 10px;
+		height: 10px;
+		background-size: 10px;
+	} 
+
+	.block-checked-elements {
+		width: 60px;
+	}
+
+	.block-order__button {
+		margin-top: 42px;
+	}
+
+	.box-projects__psychologist {
+		display: none;
+	}
+
+	.box-projects__text {
+		font-size: 20px;
+	}
+
+	.box-projects {
+		margin: 0;
+	}
+
+	.block-checked-elements {
+		margin-top: 45px;
+	}
+
+	.block-work-examples__headline {
+		font-size: 30px;
+		text-align: center;
+		margin: 100px 0 40px;
+	}
+																			/*что я могу*/ 
+
+	.form-cost-service__button {
+		width: 280px;
+		height: 55px;
+	}
+
+	.box-skills__text {
+		margin-bottom: 50px;
+	}
+
+	.box-skills-items {
+		padding: 0;
+	}
+
+	.block-skills__headline {
+		font-size: 30px;
+		padding: 0;
+		text-align: center;
+		margin: 45px 0;
+	}
+
+																				/*header*/
+
+	.page-img_bg {
+		height: 450px;
+		left: 0;
+	}					
+
+	.header {
+		padding: 0;
+	}						
+
+	svg {
+		left: -475px;
+		bottom: -460px;
+	}						
+
+	.page_background_wrap {
+		height: 550px;
+	}
+
+	.header__number_item {
+		margin: 0;
+		font-size: 18px;
+		color: #1f1f24;
+	}						
+
+	.header__request_text_item {
+		padding: 5px 5px;
+	}			
+
+	.header-block-name {
+		display: none;
+	}
+
+	.block-name_800 {
+		display: block;
+	}
+
+	.box-name__headline {
+		margin-top: 15px;
+	} 
+
+	.box-name {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.box-name__headline {
+		text-align: center;
+	}
+
+	.box-name__text {
+		text-align: center;
+	}
+
+}
+
+
+
+@media (max-width: 400px) {
+
+																	/*header*/ 
+	.header__menu-icon {
+		display: none;
+	}
+
+	.header__menu-icon_320 {
+		display: block;
+	} 
+
+	.header__request_text_item {
+		display: none;
+	}
+
+	.header__request_button {
+		display: block;
+	}
+
+	.box-name__headline {
+		font-size: 28px;
+	}
+
+	.box-name__text {
+		font-size: 16px;
+		margin: 10px 0 25px;
+	}
+
+	.box-name__button {
+		width: 280px;
+		height: 55px;
+	}
+
+															/*летающие символы*/
+.page-flying-item {
+	font-size: 25px;
+}
+
+															/*что я могу*/
+	.box-skills__text {
+		font-size: 16px;
+		max-width: 215px;
+	}						
+
+	                             /*Адаптивная вёрстка под все устройства*/
+
+	.page-adaptive__flying_item_rotate_1 {
+		display: none;
+	}						
+
+	.page-adaptive__flying_item_rotate_4 {
+		display: none;
+	}
+
+	.page-adaptive__flying_item_rotate_5 {
+		right: -1000px;
+	}
+}
+
+@media (max-width: 610px) {
+	.box-skills {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.page-adaptive__flying_item_rotate_5  {
+		display: none;
+	}
+}
