@@ -1,5 +1,5 @@
 html, body {
-	margin: 0px;
+	margin: 0;
 	padding: 0;
 	font-family: Roboto;
 	overflow: auto;
@@ -46,6 +46,85 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+																							/*Форма обратной связи*/
+.full-global-dialog-container {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: #00000085;
+}
+
+.global-dialog-container {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: #00000085;
+}
+
+.dialog-wind-container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+		.feedback-container {
+			width: 400px;
+			background-color: #fff;
+			display: flex;
+			flex-direction: column;
+			border-radius: 16px;
+		}
+
+				.feedback-container input {
+					height: 30px;
+					width: 95%;
+					border: 1px solid #82828282;
+					padding: 0 10px; 
+					border-radius: 5px;
+					outline-color: pink;
+					font-size: 16px;
+				}
+
+		.feedback-container > div {
+			padding: 12px 20px;
+		}  
+
+				.feedback-name-container p {
+					padding-bottom: 12px;
+				}
+
+				.feedback-number-container p {
+					padding-bottom: 12px;
+				}
+
+		.feedback__button {
+			margin: 20px;
+		}
+
+		.feedback-headline-container {
+			display: flex;
+			justify-content: flex-start;
+			border-bottom: 1px solid #80808085;
+		}
+
+		.feedback__delete {
+			height: 10px;
+			padding-top: 6px;
+			margin-left: auto;
+			align-self: center;
+			cursor: pointer;
+		}
+
+			.feedback-headline-container h3 {
+				font-size: 25px;
+				color: #bc5278;
+			}
+			                                    /*header*/
 
 .header {
 	padding-bottom: 230px;
@@ -107,12 +186,12 @@ a:hover {
 	font-weight: bold;
 }
 
-.header__menu-icon {
+#header__menu-icon {
 	display: none;
 	cursor: pointer;
 }
 
-.header__menu-icon_320 {
+#header__menu-icon_320 {
 	display: none;
 	cursor: pointer;
 }
@@ -124,6 +203,18 @@ a:hover {
 .bg-container-ph-elem {
 	position: absolute;
 	bottom: 0;
+}
+
+.header-nav-menu-auto {
+	display: none;
+}
+
+.header-nav-menu-auto li {
+	padding: 13px 0;
+}
+
+.header-nav-menu-auto li :hover{
+	color: #fc557c;
 }
 																/*летающие символы*/
  .page-flying-item {
@@ -338,7 +429,7 @@ svg {
 		}
 
  																				/*	что я могу*/
-			.block-skills {
+			#block-skills {
 
 				display: -webkit-box;
 
@@ -412,48 +503,36 @@ svg {
 						}
 																									/*примеры моих работ*/
 		.global-wrap-works {
-			margin: 0 auto;
 			position: relative;
-			max-width: 1197px;
 		}	
 
-		.block-work-examples {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			    -ms-flex-direction: column;
-			        flex-direction: column;
-			-webkit-box-align: center;
-			    -ms-flex-align: center;
-			        align-items: center;
-		}
-
 		.block-work-examples__headline {
-			margin: 200px 0 100px;
+			margin: 200px auto 100px;
 			font-size: 54px;
 			color: #262626;
+			text-align: center;
 		}
 
-				.block-project-examples {
-					width: 100%;
-					display: -webkit-box;
-					display: -ms-flexbox;
-					display: flex;
-					-webkit-box-orient: horizontal;
-					-webkit-box-direction: normal;
-					    -ms-flex-direction: row;
-					        flex-direction: row;
-					-ms-flex-item-align: normal;
-					    align-self: normal;
-					-webkit-box-pack: justify;
-					    -ms-flex-pack: justify;
-					        justify-content: space-between;
+				.box-projects {
+					height: 300px;
 				}
 
-				.box-projects {
-					margin: 0 5px;
+				.box-projects__img_psych {
+					background: url(img/psych.jpg);
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+
+				.box-projects__img_baby {
+					background: url(img/baby.jpg);
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+
+				.box-projects__img_fish {
+					background: url(img/fish.jpg);
+					background-position: center;
+					background-repeat: no-repeat;
 				}
 
 				.box-projects__text {
@@ -462,28 +541,25 @@ svg {
 					text-align: center;
 				}
 
-				.box-projects__img {
-					margin-bottom: 38px;
-					cursor: pointer;
-				}
 
 .global-wrap-works__arrow_shadow {
 	border-radius: 50px;
 	box-shadow: 4px 2px 48px -8px rgba(0,0,0,0.75);
+	z-index: 9;
 
 	cursor: pointer;
 }
 
 			.global-wrap-works__arrow_left {
 				position: absolute;
-				left: -18px;
-				bottom: 335px;
+				left: 35px;
+				bottom: 310px;
 			}
 
 			.global-wrap-works__arrow_right {
 				position: absolute;
-				right: -18px;
-				bottom: 335px;
+				right: 35px;
+				bottom: 310px;
 			}
 
 .block-checked-elements {
@@ -515,6 +591,12 @@ svg {
 
 	.block-checked-elements__circle_unselected {
 		background-image: url(img/unselected-circle.png);
+	}
+
+	.block-order {
+		display: flex;
+    flex-direction: column;
+    align-items: center;
 	}
 
 .block-order__button {

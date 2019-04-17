@@ -11,16 +11,62 @@
 	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#2d89ef">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" type="text/css" href="fonts.css">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="styles-media.css">
+	<link rel="stylesheet" href="slick.css">
+	<link rel="stylesheet" href="slick-theme.css">
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles-media.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<script src="jquery-3.3.1.min.js"></script>
 	<script src="script.js"></script>
+	<script src="slick.min.js"></script>
+	<script src="main.js"></script>
 </head>
 	  																						<!-- header с картинкой человека и фоном-->
 
 	<body class="body">	
+		<div class="global-dialog-container">
+			<div class="dialog-wind-container">
+					<form class="feedback-container">
+						<div class="feedback-headline-container">
+							<h3>Заполните заявку</h3>
+							<img class="feedback__delete" src="img/delete.png" name="delete">
+						</div>
+						<div class="feedback-name-container">
+							<p>Ваше имя:</p>
+							<input type="text" name="your_name" required>
+						</div>
+						<div class="feedback-number-container">
+							<p>Ваш номер телефона:</p>
+							<input type="number" name="your_number" required placeholder="+7(000)-00-00">
+						</div>
+						<button class="feedback__button" type="submit">Позвоните мне</button>
+					</form>  
+				</div>
+			</div>	
+			<div class="full-global-dialog-container">
+			<div class="dialog-wind-container">
+					<form class="feedback-container">
+						<div class="feedback-headline-container">
+							<h3>Заполните заявку</h3>
+							<img class="feedback__delete" src="img/delete.png" name="delete">
+						</div>
+						<div class="feedback-name-container">
+							<p>Ваше имя:</p>
+							<input type="text" name="your_name" required>
+						</div>
+						<div class="feedback-name-container">
+							<p>E-mail:</p>
+							<input type="email" name="your_name" required>
+						</div>
+						<div class="feedback-number-container">
+							<p>Ваш номер телефона:</p>
+							<input type="number" name="your_number" required placeholder="+7(000)-00-00">
+						</div>
+						<button class="feedback__button" type="submit">Позвоните мне</button>
+					</form>  
+				</div>
+			</div>	
 		<header class="header"> 													
 		<div class="wrap page_background_wrap">
 			<div class="bg-container-ph-elem">
@@ -44,12 +90,12 @@
 				</div>
 				<div class="header-up-menu-container">
 					<div class="inner">
-						<img class="header__menu-icon" src="img/popupmenu.png" alt="icon">
-						<img class="header__menu-icon_320" src="img/popupmenu320.png" alt="icon">
+						<img id="header__menu-icon" class="header-menu-icon_c" src="img/popupmenu.png" alt="icon">
+						<img id="header__menu-icon_320" class="header-menu-icon_c" src="img/popupmenu320.png" alt="icon">
 							<nav class="header-menu">
 								<ul class="header-menu-items">
-									<li><a href="#">Услуги</a></li>
-									<li><a class="header-menu__link" href="#">Портфолио</a></li>
+									<li><a href="#block-skills">Услуги</a></li>
+									<li><a class="header-menu__link" href="#block-work-examples">Портфолио</a></li>
 									<li><a href="#">Стоимость</a></li>
 								</ul>
 							</nav>
@@ -58,11 +104,16 @@
 							<img class="header__request_button" src="img/request_a_call.png" alt="button">
 						</div>	
 					</div>
+					<div class="header-nav-menu-auto">
+						<li><a href="#block-skills">Услуги</a></li>
+						<li><a href="#block-work-examples">Портфолио</a></li>
+						<li><a href="#">Стоимость</a></li>	
+					</div>
 				<section class="block-name header-block-name">
 					<div class="box-name">
 						<h1 class="box-name__headline">Дмитрий Алексеев</h1>
 						<p class="box-name__text">Frontend-разработчик и веб-верстальщик</p>
-						<form>
+						<form action="#block-skills">
 							<button class="box-name__button">Узнать больше</button>
 						</form>				
 					</div>
@@ -80,7 +131,7 @@
 						</form>				
 					</div>
 				</section>	
-			<div class="block-skills">
+			<div id="block-skills">
 			<h2 class="block-skills__headline">Что я делаю</h2>
 			<div class="box-skills">
 				<article class="box-skills-items">
@@ -102,44 +153,51 @@
 			</div>
 			<div class="form-cost-service">
 				<form>
-					<button class="form-cost-service__button">Узнать больше</button>
+					<button class="form-cost-service__button">Узнать стоимость</button>
 				</form>		
 			</div>
 			</div>
 		</div>																	
 		
 	                                       	<!-- примеры моих работ -->
-	<div class="global-wrap-works">    
-	  <img class="global-wrap-works__arrow_left global-wrap-works__arrow_shadow" src="img/arrow.png" alt="arrow">
-		<img class="global-wrap-works__arrow_right global-wrap-works__arrow_shadow" src="img/arrow2.png" alt="arrow">                                 	
+	<div class="wrap global-wrap-works">    
+	  <img class="global-wrap-works__arrow_left global-wrap-works__arrow_shadow arrow arrow_left" src="img/arrow.png" alt="arrow">
+		<img class="global-wrap-works__arrow_right global-wrap-works__arrow_shadow arrow arrow_right" src="img/arrow2.png" alt="arrow">                                 	
 	  <div class="wrap">
-			<section class="block-work-examples">
-				<h2 class="block-work-examples__headline">Примеры моих работ</h2>
-				<div class="block-project-examples">
-					<article class="box-projects box-projects__psychologist">
-						<img class="box-projects__img" src="img/psych.jpg" alt="picture">
-						<h4 class="box-projects__text">Сайт психолога Веры Антоновой</h4>
-					</article>
-					<article class="box-projects box-projects__baby">
-						<img class="box-projects__img" src="img/baby.jpg" alt="picture">
-						<h4 class="box-projects__text">Сайт магазина детской одежды</h4>
-					</article>
-					<article class="box-projects box-projects__fish">
-						<img class="box-projects__img" src="img/fish.jpg" alt="picture">
-						<h4 class="box-projects__text">Сайт магазина «Рыболов»</h4>
-					</article>
-				</div>
-				<div class="block-checked-elements">
-					<div class="block-checked-elements__circles block-checked-elements__circle_selected"></div>
-					<div class="block-checked-elements__circles block-checked-elements__circle_unselected"></div>
-					<div class="block-checked-elements__circles block-checked-elements__circle_unselected"></div>
-				</div>
+			<div id="block-work-examples">
+			<h2 class="block-work-examples__headline">Примеры моих работ</h2>	
+						<div class="slick">
+							<div class="box-projects slick-list">
+								<div class="slick-item">
+									<div class="box-projects box-projects__img_psych"></div>
+									<h4 class="box-projects__text">Сайт психолога Веры Антоновой</h4>
+								</div>
+							</div>
+							<div class="box-projects slick-list">
+								<div class="slick-item">
+									<div class="box-projects box-projects__img_psych"></div>
+									<h4 class="box-projects__text">Сайт психолога Веры Антоновой</h4>
+								</div>	
+							</div>
+							<div class="box-projects slick-list">
+								<div class="slick-item">
+									<div class="box-projects box-projects__img_baby"></div>
+									<h4 class="box-projects__text">Сайт магазина детской одежды</h4>
+								</div>	
+							</div>
+							<div class="box-projects slick-list">
+								<div class="slick-item">
+									<div class="box-projects__img_fish box-projects"></div>
+									<h4 class="box-projects__text">Сайт магазина «Рыболов»</h4>
+								</div>	
+							</div>
+						</div>
+					</div>			
 				<div class="block-order">
 					<form>
 						<button class="block-order__button">Заказать проект</button>
 					</form>		
 				</div>	
-			</section>
 		</div>                                            	
 	</div>	
 																											<!-- Адаптивная вёрстка под все устройства -->
@@ -162,8 +220,8 @@
 	<footer class="footer">
 		<nav class="footer-menu">
 			<ul>
-				<li class="footer-menu__item"><a class="footer-menu__link" href="#">Услуги</a></li>
-				<li class="footer-menu__item"><a class="footer-menu__link" href="#">Портфолио</a></li>
+				<li class="footer-menu__item"><a class="footer-menu__link" href="#block-skills">Услуги</a></li>
+				<li class="footer-menu__item"><a class="footer-menu__link" href="#block-work-examples">Портфолио</a></li>
 				<li class="footer-menu__item footer-menu__pay"><a class="footer-menu__link" href="#">Стоимость</a></li>
 			</ul>
 		</nav>

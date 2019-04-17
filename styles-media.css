@@ -17,6 +17,12 @@
 	}
 }
 
+@media (min-width: 1024px) {
+	.header-nav-menu-auto {
+		display: none !important;
+	}
+}
+
                                         /*планшетное разрешение */
                                         /*верхняя часть сайта*/
 @media (max-width: 1024px) {
@@ -24,7 +30,7 @@
 		display: none;
 	}
 
-	.header__menu-icon {
+	#header__menu-icon {
 		display: block;
 	}
 
@@ -55,35 +61,13 @@
 			}
 														/*примеры моих работ*/
 
-	.box-projects__fish {
-		display: none;
-	}		
-
-	.box-projects {
-		width: 100%;
-	}
-
-	.box-projects__img {
-		width: 100%;
-	}
 
 	.box-projects__text {
 		font-size: 25px;
 	}
 
 	.global-wrap-works__arrow_shadow {
-		display: none;
-	}
-
-	.box-projects {
-		margin-left: 20px;
-		margin-right: 20px;
-	}
-
-	.block-checked-elements {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
+		display: none !important;
 	}
 
 	.block-order__button {
@@ -173,34 +157,12 @@
 		height: 55px;
 	}
 
-	.block-checked-elements__circles {
-		width: 10px;
-		height: 10px;
-		background-size: 10px;
-	} 
-
-	.block-checked-elements {
-		width: 60px;
-	}
-
 	.block-order__button {
 		margin-top: 42px;
 	}
 
-	.box-projects__psychologist {
-		display: none;
-	}
-
 	.box-projects__text {
 		font-size: 20px;
-	}
-
-	.box-projects {
-		margin: 0;
-	}
-
-	.block-checked-elements {
-		margin-top: 45px;
 	}
 
 	.block-work-examples__headline {
@@ -208,6 +170,8 @@
 		text-align: center;
 		margin: 100px 0 40px;
 	}
+
+
 																			/*что я могу*/ 
 
 	.form-cost-service__button {
@@ -300,11 +264,11 @@
 @media (max-width: 400px) {
 
 																	/*header*/ 
-	.header__menu-icon {
+	#header__menu-icon {
 		display: none;
 	}
 
-	.header__menu-icon_320 {
+	#header__menu-icon_320 {
 		display: block;
 	} 
 
