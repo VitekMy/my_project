@@ -64,6 +64,11 @@ $(function(){
 		return false;
 	});
 
+	$('.body').on('click', '.block-new-form__button', function(){
+		$('.global-dialog-container').fadeIn(300);
+		return false;
+	});
+
 	$('.body').on('click', '.block-order__button', function(){
 		$('.full-global-dialog-container').fadeIn(300);
 		return false;
