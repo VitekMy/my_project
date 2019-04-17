@@ -49,11 +49,15 @@ $(function(){
 		return false;
 	});
 
+	$('.body').on('click', '.header__request_button', function(){
+		$('.global-dialog-container').fadeIn(300);
+	});
+
 	$('.body').on('click', '.dialog-wind-container', function(event){
 		if (event.target == this) {
 			$(this).parent().fadeOut(300);
 		}
-	})
+	});
 
 	$('.body').on('click', '.form-cost-service__button', function(){
 		$('.full-global-dialog-container').fadeIn(300);
