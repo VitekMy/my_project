@@ -548,24 +548,24 @@ svg {
 		}
 
 				.box-projects {
-					height: 300px;
+					height: 364px;
 				}
 
 				.box-projects__img_psych {
 					background: url(img/psych.jpg);
-					background-position: center;
+					background-position: top;
 					background-repeat: no-repeat;
 				}
 
 				.box-projects__img_baby {
 					background: url(img/baby.jpg);
-					background-position: center;
+					background-position: top;
 					background-repeat: no-repeat;
 				}
 
 				.box-projects__img_fish {
 					background: url(img/fish.jpg);
-					background-position: center;
+					background-position: top;
 					background-repeat: no-repeat;
 				}
 
@@ -574,6 +574,13 @@ svg {
 					color: #8993ad;
 					text-align: center;
 				}
+
+			.slick-item__text {
+				font-size: 20px;
+    color: #8993ad;
+    margin-top: -47px;
+    text-align: center;
+			}	
 
 
 .global-wrap-works__arrow_shadow {
@@ -588,13 +595,13 @@ svg {
 			.global-wrap-works__arrow_left {
 				position: absolute;
 				left: 35px;
-				bottom: 310px;
+				bottom: 370px;
 			}
 
 			.global-wrap-works__arrow_right {
 				position: absolute;
 				right: 35px;
-				bottom: 310px;
+				bottom: 370px;
 			}
 
 .block-checked-elements {
